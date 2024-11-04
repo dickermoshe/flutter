@@ -169,6 +169,81 @@ void main() {
     expect(sizeTheme.labelSmall!.fontSize, baseTheme.labelSmall!.fontSize! * 2.0 + 5.0);
   });
 
+  test('TextTheme apply letterSpacingFactor letterSpacingDelta', () {
+    final Typography typography = Typography.material2018();
+    final TextTheme baseTheme = Typography.englishLike2018.merge(typography.black);
+    final TextTheme sizeTheme = baseTheme.apply(
+      letterSpacingFactor: 2.0,
+      letterSpacingDelta: 5.0,
+    );
+
+    expect(sizeTheme.displayLarge!.letterSpacing, baseTheme.displayLarge!.letterSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.displayMedium!.letterSpacing, baseTheme.displayMedium!.letterSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.displaySmall!.letterSpacing, baseTheme.displaySmall!.letterSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.headlineLarge!.letterSpacing, baseTheme.headlineLarge!.letterSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.headlineMedium!.letterSpacing, baseTheme.headlineMedium!.letterSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.headlineSmall!.letterSpacing, baseTheme.headlineSmall!.letterSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.titleLarge!.letterSpacing, baseTheme.titleLarge!.letterSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.titleMedium!.letterSpacing, baseTheme.titleMedium!.letterSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.titleSmall!.letterSpacing, baseTheme.titleSmall!.letterSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.bodyLarge!.letterSpacing, baseTheme.bodyLarge!.letterSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.bodyMedium!.letterSpacing, baseTheme.bodyMedium!.letterSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.bodySmall!.letterSpacing, baseTheme.bodySmall!.letterSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.labelLarge!.letterSpacing, baseTheme.labelLarge!.letterSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.labelMedium!.letterSpacing, baseTheme.labelMedium!.letterSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.labelSmall!.letterSpacing, baseTheme.labelSmall!.letterSpacing! * 2.0 + 5.0);
+  });
+
+  test('TextTheme apply wordSpacingFactor wordSpacingDelta', () {
+    final Typography typography = Typography.material2018();
+    final TextTheme baseTheme = Typography.englishLike2018.merge(typography.black);
+    final TextTheme sizeTheme = baseTheme.apply(
+      wordSpacingFactor: 2.0,
+      wordSpacingDelta: 5.0,
+    );
+
+    expect(sizeTheme.displayLarge!.wordSpacing, baseTheme.displayLarge!.wordSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.displayMedium!.wordSpacing, baseTheme.displayMedium!.wordSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.displaySmall!.wordSpacing, baseTheme.displaySmall!.wordSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.headlineLarge!.wordSpacing, baseTheme.headlineLarge!.wordSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.headlineMedium!.wordSpacing, baseTheme.headlineMedium!.wordSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.headlineSmall!.wordSpacing, baseTheme.headlineSmall!.wordSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.titleLarge!.wordSpacing, baseTheme.titleLarge!.wordSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.titleMedium!.wordSpacing, baseTheme.titleMedium!.wordSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.titleSmall!.wordSpacing, baseTheme.titleSmall!.wordSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.bodyLarge!.wordSpacing, baseTheme.bodyLarge!.wordSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.bodyMedium!.wordSpacing, baseTheme.bodyMedium!.wordSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.bodySmall!.wordSpacing, baseTheme.bodySmall!.wordSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.labelLarge!.wordSpacing, baseTheme.labelLarge!.wordSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.labelMedium!.wordSpacing, baseTheme.labelMedium!.wordSpacing! * 2.0 + 5.0);
+    expect(sizeTheme.labelSmall!.wordSpacing, baseTheme.labelSmall!.wordSpacing! * 2.0 + 5.0);
+  });
+
+  test('TextTheme apply heightFactor heightDelta', () {
+    final Typography typography = Typography.material2018();
+    final TextTheme baseTheme = Typography.englishLike2018.merge(typography.black);
+    final TextTheme sizeTheme = baseTheme.apply(
+      heightFactor: 2.0,
+      heightDelta: 5.0,
+    );
+
+    expect(sizeTheme.displayLarge!.height, baseTheme.displayLarge!.height! * 2.0 + 5.0);
+    expect(sizeTheme.displayMedium!.height, baseTheme.displayMedium!.height! * 2.0 + 5.0);
+    expect(sizeTheme.displaySmall!.height, baseTheme.displaySmall!.height! * 2.0 + 5.0);
+    expect(sizeTheme.headlineLarge!.height, baseTheme.headlineLarge!.height! * 2.0 + 5.0);
+    expect(sizeTheme.headlineMedium!.height, baseTheme.headlineMedium!.height! * 2.0 + 5.0);
+    expect(sizeTheme.headlineSmall!.height, baseTheme.headlineSmall!.height! * 2.0 + 5.0);
+    expect(sizeTheme.titleLarge!.height, baseTheme.titleLarge!.height! * 2.0 + 5.0);
+    expect(sizeTheme.titleMedium!.height, baseTheme.titleMedium!.height! * 2.0 + 5.0);
+    expect(sizeTheme.titleSmall!.height, baseTheme.titleSmall!.height! * 2.0 + 5.0);
+    expect(sizeTheme.bodyLarge!.height, baseTheme.bodyLarge!.height! * 2.0 + 5.0);
+    expect(sizeTheme.bodyMedium!.height, baseTheme.bodyMedium!.height! * 2.0 + 5.0);
+    expect(sizeTheme.bodySmall!.height, baseTheme.bodySmall!.height! * 2.0 + 5.0);
+    expect(sizeTheme.labelLarge!.height, baseTheme.labelLarge!.height! * 2.0 + 5.0);
+    expect(sizeTheme.labelMedium!.height, baseTheme.labelMedium!.height! * 2.0 + 5.0);
+    expect(sizeTheme.labelSmall!.height, baseTheme.labelSmall!.height! * 2.0 + 5.0);
+  });
+
   test('TextTheme lerp with second parameter null', () {
     final TextTheme theme = Typography.material2018().black;
     final TextTheme lerped = TextTheme.lerp(theme, null, 0.25);
