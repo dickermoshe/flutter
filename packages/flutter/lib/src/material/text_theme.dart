@@ -760,41 +760,21 @@ class TextTheme with Diagnosticable {
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
-    final TextTheme defaultTheme =
-        Typography.material2018(platform: defaultTargetPlatform).black;
-    properties.add(DiagnosticsProperty<TextStyle>('displayLarge', displayLarge,
-        defaultValue: defaultTheme.displayLarge));
-    properties.add(DiagnosticsProperty<TextStyle>(
-        'displayMedium', displayMedium,
-        defaultValue: defaultTheme.displayMedium));
-    properties.add(DiagnosticsProperty<TextStyle>('displaySmall', displaySmall,
-        defaultValue: defaultTheme.displaySmall));
-    properties.add(DiagnosticsProperty<TextStyle>(
-        'headlineLarge', headlineLarge,
-        defaultValue: defaultTheme.headlineLarge));
-    properties.add(DiagnosticsProperty<TextStyle>(
-        'headlineMedium', headlineMedium,
-        defaultValue: defaultTheme.headlineMedium));
-    properties.add(DiagnosticsProperty<TextStyle>(
-        'headlineSmall', headlineSmall,
-        defaultValue: defaultTheme.headlineSmall));
-    properties.add(DiagnosticsProperty<TextStyle>('titleLarge', titleLarge,
-        defaultValue: defaultTheme.titleLarge));
-    properties.add(DiagnosticsProperty<TextStyle>('titleMedium', titleMedium,
-        defaultValue: defaultTheme.titleMedium));
-    properties.add(DiagnosticsProperty<TextStyle>('titleSmall', titleSmall,
-        defaultValue: defaultTheme.titleSmall));
-    properties.add(DiagnosticsProperty<TextStyle>('bodyLarge', bodyLarge,
-        defaultValue: defaultTheme.bodyLarge));
-    properties.add(DiagnosticsProperty<TextStyle>('bodyMedium', bodyMedium,
-        defaultValue: defaultTheme.bodyMedium));
-    properties.add(DiagnosticsProperty<TextStyle>('bodySmall', bodySmall,
-        defaultValue: defaultTheme.bodySmall));
-    properties.add(DiagnosticsProperty<TextStyle>('labelLarge', labelLarge,
-        defaultValue: defaultTheme.labelLarge));
-    properties.add(DiagnosticsProperty<TextStyle>('labelMedium', labelMedium,
-        defaultValue: defaultTheme.labelMedium));
-    properties.add(DiagnosticsProperty<TextStyle>('labelSmall', labelSmall,
-        defaultValue: defaultTheme.labelSmall));
+    final TextTheme defaultTheme = Typography.material2018(platform: defaultTargetPlatform).black;
+    properties.add(DiagnosticsProperty<TextStyle>('displayLarge', displayLarge, defaultValue: defaultTheme.displayLarge));
+    properties.add(DiagnosticsProperty<TextStyle>('displayMedium', displayMedium, defaultValue: defaultTheme.displayMedium));
+    properties.add(DiagnosticsProperty<TextStyle>('displaySmall', displaySmall, defaultValue: defaultTheme.displaySmall));
+    properties.add(DiagnosticsProperty<TextStyle>('headlineLarge', headlineLarge, defaultValue: defaultTheme.headlineLarge));
+    properties.add(DiagnosticsProperty<TextStyle>('headlineMedium', headlineMedium, defaultValue: defaultTheme.headlineMedium));
+    properties.add(DiagnosticsProperty<TextStyle>('headlineSmall', headlineSmall, defaultValue: defaultTheme.headlineSmall));
+    properties.add(DiagnosticsProperty<TextStyle>('titleLarge', titleLarge, defaultValue: defaultTheme.titleLarge));
+    properties.add(DiagnosticsProperty<TextStyle>('titleMedium', titleMedium, defaultValue: defaultTheme.titleMedium));
+    properties.add(DiagnosticsProperty<TextStyle>('titleSmall', titleSmall, defaultValue: defaultTheme.titleSmall));
+    properties.add(DiagnosticsProperty<TextStyle>('bodyLarge', bodyLarge, defaultValue: defaultTheme.bodyLarge));
+    properties.add(DiagnosticsProperty<TextStyle>('bodyMedium', bodyMedium, defaultValue: defaultTheme.bodyMedium));
+    properties.add(DiagnosticsProperty<TextStyle>('bodySmall', bodySmall, defaultValue: defaultTheme.bodySmall));
+    properties.add(DiagnosticsProperty<TextStyle>('labelLarge', labelLarge, defaultValue: defaultTheme.labelLarge));
+    properties.add(DiagnosticsProperty<TextStyle>('labelMedium', labelMedium, defaultValue: defaultTheme.labelMedium));
+    properties.add(DiagnosticsProperty<TextStyle>('labelSmall', labelSmall, defaultValue: defaultTheme.labelSmall));
   }
 }
