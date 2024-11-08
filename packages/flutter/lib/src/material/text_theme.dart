@@ -362,18 +362,12 @@ class TextTheme with Diagnosticable {
       return this;
     }
     return copyWith(
-      displayLarge:
-          displayLarge?.merge(other.displayLarge) ?? other.displayLarge,
-      displayMedium:
-          displayMedium?.merge(other.displayMedium) ?? other.displayMedium,
-      displaySmall:
-          displaySmall?.merge(other.displaySmall) ?? other.displaySmall,
-      headlineLarge:
-          headlineLarge?.merge(other.headlineLarge) ?? other.headlineLarge,
-      headlineMedium:
-          headlineMedium?.merge(other.headlineMedium) ?? other.headlineMedium,
-      headlineSmall:
-          headlineSmall?.merge(other.headlineSmall) ?? other.headlineSmall,
+      displayLarge: displayLarge?.merge(other.displayLarge) ?? other.displayLarge,
+      displayMedium: displayMedium?.merge(other.displayMedium) ?? other.displayMedium,
+      displaySmall: displaySmall?.merge(other.displaySmall) ?? other.displaySmall,
+      headlineLarge: headlineLarge?.merge(other.headlineLarge) ?? other.headlineLarge,
+      headlineMedium: headlineMedium?.merge(other.headlineMedium) ?? other.headlineMedium,
+      headlineSmall: headlineSmall?.merge(other.headlineSmall) ?? other.headlineSmall,
       titleLarge: titleLarge?.merge(other.titleLarge) ?? other.titleLarge,
       titleMedium: titleMedium?.merge(other.titleMedium) ?? other.titleMedium,
       titleSmall: titleSmall?.merge(other.titleSmall) ?? other.titleSmall,
@@ -716,8 +710,7 @@ class TextTheme with Diagnosticable {
   /// See also:
   /// * [TextTheme.of], which returns the [ThemeData.textTheme] property of the ambient
   ///   [Theme] instead.
-  static TextTheme primaryOf(BuildContext context) =>
-      Theme.of(context).primaryTextTheme;
+  static TextTheme primaryOf(BuildContext context) => Theme.of(context).primaryTextTheme;
 
   @override
   bool operator ==(Object other) {
@@ -727,22 +720,22 @@ class TextTheme with Diagnosticable {
     if (other.runtimeType != runtimeType) {
       return false;
     }
-    return other is TextTheme &&
-        displayLarge == other.displayLarge &&
-        displayMedium == other.displayMedium &&
-        displaySmall == other.displaySmall &&
-        headlineLarge == other.headlineLarge &&
-        headlineMedium == other.headlineMedium &&
-        headlineSmall == other.headlineSmall &&
-        titleLarge == other.titleLarge &&
-        titleMedium == other.titleMedium &&
-        titleSmall == other.titleSmall &&
-        bodyLarge == other.bodyLarge &&
-        bodyMedium == other.bodyMedium &&
-        bodySmall == other.bodySmall &&
-        labelLarge == other.labelLarge &&
-        labelMedium == other.labelMedium &&
-        labelSmall == other.labelSmall;
+    return other is TextTheme
+      && displayLarge == other.displayLarge
+      && displayMedium == other.displayMedium
+      && displaySmall == other.displaySmall
+      && headlineLarge == other.headlineLarge
+      && headlineMedium == other.headlineMedium
+      && headlineSmall == other.headlineSmall
+      && titleLarge == other.titleLarge
+      && titleMedium == other.titleMedium
+      && titleSmall == other.titleSmall
+      && bodyLarge == other.bodyLarge
+      && bodyMedium == other.bodyMedium
+      && bodySmall == other.bodySmall
+      && labelLarge == other.labelLarge
+      && labelMedium == other.labelMedium
+      && labelSmall == other.labelSmall;
   }
 
   @override
