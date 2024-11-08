@@ -740,22 +740,22 @@ class TextTheme with Diagnosticable {
 
   @override
   int get hashCode => Object.hash(
-        displayLarge,
-        displayMedium,
-        displaySmall,
-        headlineLarge,
-        headlineMedium,
-        headlineSmall,
-        titleLarge,
-        titleMedium,
-        titleSmall,
-        bodyLarge,
-        bodyMedium,
-        bodySmall,
-        labelLarge,
-        labelMedium,
-        labelSmall,
-      );
+   displayLarge,
+   displayMedium,
+   displaySmall,
+   headlineLarge,
+   headlineMedium,
+   headlineSmall,
+   titleLarge,
+   titleMedium,
+   titleSmall,
+   bodyLarge,
+   bodyMedium,
+   bodySmall,
+   labelLarge,
+   labelMedium,
+   labelSmall,
+  );
 
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
